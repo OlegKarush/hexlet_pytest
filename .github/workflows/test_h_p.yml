@@ -12,6 +12,7 @@ jobs:
       # checkout – клонирует репозиторий
       - uses: actions/checkout@v3
       # run – произвольная bash-команда
-      # ls -la выведет содержимое текущего репозитория
+      - name: Install poetry
+        run: pip install poetry
       - name: Run test
         run: poetry run pytest
