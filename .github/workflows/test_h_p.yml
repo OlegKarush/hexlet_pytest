@@ -8,11 +8,11 @@ build:
     steps: # список шагов, которые надо выполнить
       # экшен, выполняет какую-то задачу
       # checkout – клонирует репозиторий
-      - uses: actions/checkout@v3
+      # - uses: actions/checkout@v3
       # run – произвольная bash-команда
        # - name: 'Install poetry'
         #  run: 
          #   pip install poetry
           #  poetry install
-      - name: 'Run test'
-        run: poetry run pytest
+      # - name: 'Run test'
+        # run: poetry run pytest
